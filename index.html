@@ -101,6 +101,31 @@
                 alert("Incorrect password. Please try again!");
             }
         }
+
+        // Disable screenshots
+        document.addEventListener('keydown', function (event) {
+            if (event.key === 'PrintScreen') {
+                alert('Screenshots are disabled on this website.');
+                event.preventDefault();
+            }
+        });
+
+        document.addEventListener('keyup', function (event) {
+            if (event.key === 'PrintScreen') {
+                navigator.clipboard.writeText('Screenshots are disabled on this website.');
+            }
+        });
+
+        // Disable text selection and copying
+        document.addEventListener('contextmenu', function (event) {
+            event.preventDefault();
+            alert('Right-click is disabled on this website.');
+        });
+
+        document.addEventListener('copy', function (event) {
+            event.preventDefault();
+            alert('Copying text is disabled on this website.');
+        });
     </script>
 </head>
 <body>
@@ -109,7 +134,7 @@
         <h1 class="animated-text">Welcome❤️</h1>
         <p class="disclaimer">
             Disclaimer: Yarukudaiyum itha pathi discuss pannama unku ena thonutho atha apudiye sollu... 
-            Please try to keep it personal and confidential between us...❤️
+            Please try to keep it personal and confidential between us. ❤️
         </p>
         <p>Please enter the secret password to unlock your message:</p>
         <input type="password" id="password" placeholder="Enter password">
@@ -118,7 +143,7 @@
 
     <!-- Love Letter -->
     <div id="love-letter" class="container">
-        <h1 class="animated-text">To My Dearest Love</h1>
+        <h1 class="animated-text">the initial one</h1>
         <p>
             Hi,ithu unku than dii , i don't know whether correct or Wrong what Im trying to do 
             but ennala feel control panna mudiyala so ,Naa sollanu naekuratha solliren life long unkuda travel pannum naekkiren itha munadiye Naa sonnathu than iruthalum thirubiyum solluren i love you😘 and I want to share mine and your everything until eternity♾ like andanallur iruka yenga aaya,thaththa Mari long time /sithi,sithappa Mari understanding/and aththa,mama mari trust oda life long,yenku onnum periya asailam illa yennoda face reflectiona unada eye pathu kittu irutha pothum and ungaku onnu theriyuma yenka thaththa, aaya Mari oru couple Naa pathae illa because they fighting for first yaru savurathunu but love unconditionally .now this year  coming to end ,now let us move to next step or end up  here,i don't want to continue in delusion relationship,yenala vera yethuliyum concentrate panna mudiyala,thungakuda mudiyala dii😭and Naa dii kuputra orae womenaa itha universela athu nee than diii .so, finally I want to know what is your decision just only yes or no,Please never be afraid to talk about your problems you won't overshare or annoy me I will always listen to you  and don't try skip this please i think u can able to understand, hope 2025 will be you and me to us
